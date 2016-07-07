@@ -1,0 +1,115 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:arduino_nano
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L arduino_nano U2
+U 1 1 57476C2C
+P 3900 3150
+F 0 "U2" H 3900 2800 60  0000 C CNN
+F 1 "arduino_nano" H 3900 2400 60  0000 C CNN
+F 2 "" H 3900 2800 60  0000 C CNN
+F 3 "" H 3900 2800 60  0000 C CNN
+	1    3900 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L dfplayer U?
+U 1 1 57477441
+P 7000 3100
+F 0 "U?" H 7000 3150 60  0000 C CNN
+F 1 "dfplayer" H 7000 2650 60  0000 C CNN
+F 2 "" H 7000 3100 60  0000 C CNN
+F 3 "" H 7000 3100 60  0000 C CNN
+	1    7000 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 2700 6350 2700
+Wire Wire Line
+	5150 3300 6350 3300
+Wire Wire Line
+	6350 3400 6100 3400
+Wire Wire Line
+	6100 3400 6100 4000
+Wire Wire Line
+	6350 3200 6000 3200
+Wire Wire Line
+	6000 3200 6000 4000
+$Comp
+L CONN_01X02 P?
+U 1 1 574774DC
+P 6050 4200
+F 0 "P?" H 6050 4350 50  0000 C CNN
+F 1 "CONN_01X02" V 6150 4200 50  0000 C CNN
+F 2 "" H 6050 4200 50  0000 C CNN
+F 3 "" H 6050 4200 50  0000 C CNN
+	1    6050 4200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4600 3600 5150 3600
+Wire Wire Line
+	5150 3600 5150 3300
+Wire Wire Line
+	3200 3900 2700 3900
+Wire Wire Line
+	2700 3900 2700 2050
+Wire Wire Line
+	2700 2050 5250 2050
+Wire Wire Line
+	5250 2050 5250 2700
+Wire Wire Line
+	6350 2800 5100 2800
+Wire Wire Line
+	5100 2800 5100 2600
+Wire Wire Line
+	5100 2600 4600 2600
+Wire Wire Line
+	6350 2900 5000 2900
+Wire Wire Line
+	5000 2900 5000 2700
+Wire Wire Line
+	5000 2700 4600 2700
+$EndSCHEMATC
