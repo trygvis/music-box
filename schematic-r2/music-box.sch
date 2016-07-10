@@ -1,0 +1,378 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:arduino_nano
+LIBS:music-box-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L arduino_nano U2
+U 1 1 57476C2C
+P 3800 3150
+F 0 "U2" H 3800 2800 60  0000 C CNN
+F 1 "arduino_nano" H 3800 2400 60  0000 C CNN
+F 2 "arduino:arduino_nano" H 3800 2800 60  0001 C CNN
+F 3 "" H 3800 2800 60  0000 C CNN
+	1    3800 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L dfplayer U1
+U 1 1 57477441
+P 7750 3100
+F 0 "U1" H 7750 3150 60  0000 C CNN
+F 1 "dfplayer" H 7750 2650 60  0000 C CNN
+F 2 "dfplayer:DFPlayer" H 7750 3100 60  0001 C CNN
+F 3 "" H 7750 3100 60  0000 C CNN
+	1    7750 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P1
+U 1 1 574774DC
+P 7950 4250
+F 0 "P1" H 7950 4400 50  0000 C CNN
+F 1 "Speaker" V 8050 4250 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 7950 4250 50  0001 C CNN
+F 3 "" H 7950 4250 50  0000 C CNN
+	1    7950 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P2
+U 1 1 57752FCF
+P 1650 3850
+F 0 "P2" H 1650 4000 50  0000 C CNN
+F 1 "Power" V 1750 3850 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 1650 3850 50  0001 C CNN
+F 3 "" H 1650 3850 50  0000 C CNN
+	1    1650 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 5775314E
+P 2750 4200
+F 0 "#PWR01" H 2750 3950 50  0001 C CNN
+F 1 "GND" H 2750 4050 50  0000 C CNN
+F 2 "" H 2750 4200 50  0000 C CNN
+F 3 "" H 2750 4200 50  0000 C CNN
+	1    2750 4200
+	1    0    0    -1  
+$EndComp
+Text Label 7200 4200 0    60   ~ 0
+SPEAKER_2
+Text Label 7200 4300 0    60   ~ 0
+SPEAKER_1
+$Comp
+L GND #PWR02
+U 1 1 577531FA
+P 5150 3800
+F 0 "#PWR02" H 5150 3550 50  0001 C CNN
+F 1 "GND" H 5150 3650 50  0000 C CNN
+F 2 "" H 5150 3800 50  0000 C CNN
+F 3 "" H 5150 3800 50  0000 C CNN
+	1    5150 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR03
+U 1 1 57753247
+P 2600 1950
+F 0 "#PWR03" H 2600 1800 50  0001 C CNN
+F 1 "+5V" H 2600 2090 50  0000 C CNN
+F 2 "" H 2600 1950 50  0000 C CNN
+F 3 "" H 2600 1950 50  0000 C CNN
+	1    2600 1950
+	1    0    0    -1  
+$EndComp
+Text Label 2100 3800 2    60   ~ 0
+GND
+$Comp
+L CONN_01X08 P3
+U 1 1 57753778
+P 5950 5150
+F 0 "P3" H 5950 5600 50  0000 C CNN
+F 1 "Buttons" V 6050 5150 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08" H 5950 5150 50  0001 C CNN
+F 3 "" H 5950 5150 50  0000 C CNN
+	1    5950 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 57753861
+P 5600 5700
+F 0 "#PWR04" H 5600 5450 50  0001 C CNN
+F 1 "GND" H 5600 5550 50  0000 C CNN
+F 2 "" H 5600 5700 50  0000 C CNN
+F 3 "" H 5600 5700 50  0000 C CNN
+	1    5600 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 3400 6850 3400
+Wire Wire Line
+	6850 3400 6850 4200
+Wire Wire Line
+	7100 3200 6750 3200
+Wire Wire Line
+	6750 3200 6750 4300
+Wire Wire Line
+	4500 3600 5150 3600
+Wire Wire Line
+	1850 3900 3100 3900
+Wire Wire Line
+	2600 1950 2600 3900
+Wire Wire Line
+	5100 2800 5100 2600
+Wire Wire Line
+	5100 2600 4500 2600
+Wire Wire Line
+	5000 2900 5000 2700
+Wire Wire Line
+	5000 2700 4500 2700
+Connection ~ 2600 3900
+Wire Wire Line
+	3100 3800 1850 3800
+Wire Wire Line
+	2750 4200 2750 3800
+Connection ~ 2750 3800
+Wire Wire Line
+	6850 4200 7750 4200
+Wire Wire Line
+	6750 4300 7750 4300
+Wire Wire Line
+	4500 3400 5000 3400
+Wire Wire Line
+	5000 3400 5000 3050
+Wire Wire Line
+	5000 3050 5600 3050
+Wire Wire Line
+	5600 3050 5600 2450
+Wire Wire Line
+	5600 2450 8650 2450
+Wire Wire Line
+	8650 2450 8650 2700
+Wire Wire Line
+	8650 2700 8400 2700
+Wire Wire Line
+	5600 5700 5600 4900
+Wire Wire Line
+	5600 4900 5750 4900
+Wire Wire Line
+	5750 5100 5600 5100
+Connection ~ 5600 5100
+Wire Wire Line
+	5750 5300 5600 5300
+Connection ~ 5600 5300
+Wire Wire Line
+	5750 5500 5600 5500
+Connection ~ 5600 5500
+Wire Wire Line
+	4900 4800 5750 4800
+Wire Wire Line
+	4900 4800 4900 2800
+Wire Wire Line
+	4900 2800 4500 2800
+Wire Wire Line
+	4500 2900 4800 2900
+Wire Wire Line
+	4800 2900 4800 5000
+Wire Wire Line
+	4800 5000 5750 5000
+Wire Wire Line
+	4500 3000 4700 3000
+Wire Wire Line
+	4700 3000 4700 5200
+Wire Wire Line
+	4700 5200 5750 5200
+Wire Wire Line
+	4600 5400 5750 5400
+Wire Wire Line
+	4600 3100 4600 5400
+Wire Wire Line
+	4600 3100 4500 3100
+Wire Wire Line
+	2900 2600 3100 2600
+Wire Wire Line
+	2900 1950 2900 2600
+$Comp
+L R R1
+U 1 1 57753DFF
+P 6150 2800
+F 0 "R1" V 6230 2800 50  0000 C CNN
+F 1 "1k" V 6150 2800 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" V 6080 2800 50  0001 C CNN
+F 3 "" H 6150 2800 50  0000 C CNN
+	1    6150 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R2
+U 1 1 57753E38
+P 6150 2900
+F 0 "R2" V 6230 2900 50  0000 C CNN
+F 1 "1k" V 6150 2900 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" V 6080 2900 50  0001 C CNN
+F 3 "" H 6150 2900 50  0000 C CNN
+	1    6150 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6300 2900 7100 2900
+Wire Wire Line
+	6300 2800 7100 2800
+Wire Wire Line
+	6000 2800 5100 2800
+Wire Wire Line
+	5000 2900 6000 2900
+$Comp
+L +3V3 #PWR05
+U 1 1 57754160
+P 2900 1950
+F 0 "#PWR05" H 2900 1800 50  0001 C CNN
+F 1 "+3V3" H 2900 2090 50  0000 C CNN
+F 2 "" H 2900 1950 50  0000 C CNN
+F 3 "" H 2900 1950 50  0000 C CNN
+	1    2900 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 2700 6950 2700
+Wire Wire Line
+	6950 2700 6950 2200
+Wire Wire Line
+	5150 3600 5150 3800
+$Comp
+L GND #PWR06
+U 1 1 57754341
+P 6950 3500
+F 0 "#PWR06" H 6950 3250 50  0001 C CNN
+F 1 "GND" H 6950 3350 50  0000 C CNN
+F 2 "" H 6950 3500 50  0000 C CNN
+F 3 "" H 6950 3500 50  0000 C CNN
+	1    6950 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 3500 6950 3300
+Wire Wire Line
+	6950 3300 7100 3300
+$Comp
+L +5V #PWR07
+U 1 1 57755500
+P 6950 2200
+F 0 "#PWR07" H 6950 2050 50  0001 C CNN
+F 1 "+5V" H 6950 2340 50  0000 C CNN
+F 2 "" H 6950 2200 50  0000 C CNN
+F 3 "" H 6950 2200 50  0000 C CNN
+	1    6950 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P4
+U 1 1 57756530
+P 1850 6150
+F 0 "P4" H 1850 6250 50  0000 C CNN
+F 1 "Alignment 1" V 1950 6150 50  0000 C CNN
+F 2 "missing-parts:alignment" H 1850 6150 50  0001 C CNN
+F 3 "" H 1850 6150 50  0000 C CNN
+	1    1850 6150
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X01 P5
+U 1 1 577565C1
+P 2350 6150
+F 0 "P5" H 2350 6250 50  0000 C CNN
+F 1 "Alignment 2" V 2450 6150 50  0000 C CNN
+F 2 "missing-parts:alignment" H 2350 6150 50  0001 C CNN
+F 3 "" H 2350 6150 50  0000 C CNN
+	1    2350 6150
+	0    1    1    0   
+$EndComp
+Text Label 8200 2450 0    60   ~ 0
+BUSY
+Text Label 5000 5400 0    60   ~ 0
+BUTTON_A
+Text Label 5000 5200 0    60   ~ 0
+BUTTON_B
+Text Label 5000 5000 0    60   ~ 0
+BUTTON_C
+Text Label 5000 4800 0    60   ~ 0
+BUTTON_D
+$Comp
+L CONN_01X01 P6
+U 1 1 5782AB31
+P 2850 6150
+F 0 "P6" H 2850 6250 50  0000 C CNN
+F 1 "Alignment 3" V 2950 6150 50  0000 C CNN
+F 2 "missing-parts:alignment" H 2850 6150 50  0001 C CNN
+F 3 "" H 2850 6150 50  0000 C CNN
+	1    2850 6150
+	0    1    1    0   
+$EndComp
+Text Label 5300 2800 0    60   ~ 0
+MCU_TX
+Text Label 5300 2900 0    60   ~ 0
+MCU_RX
+Text Label 6500 2800 0    60   ~ 0
+MP3_RX
+Text Label 6500 2900 0    60   ~ 0
+MP3_TX
+$Comp
+L GND #PWR?
+U 1 1 5782B0F2
+P 8550 3500
+F 0 "#PWR?" H 8550 3250 50  0001 C CNN
+F 1 "GND" H 8550 3350 50  0000 C CNN
+F 2 "" H 8550 3500 50  0000 C CNN
+F 3 "" H 8550 3500 50  0000 C CNN
+	1    8550 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 3300 8550 3300
+Wire Wire Line
+	8550 3300 8550 3500
+$EndSCHEMATC

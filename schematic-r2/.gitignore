@@ -1,0 +1,6 @@
+*bak
+*.bin
+*.dsn
+*.ses
+*tmp*
+_*
